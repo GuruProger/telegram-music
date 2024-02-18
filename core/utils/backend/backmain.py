@@ -29,5 +29,5 @@ class Recommendation:
                                           i.find("a", {"class": "track__download-btn"}, href=True)["href"]])
 
 if __name__ == "__main__":
-    recommendation = Recommendation()
+    recommendation = Recommendation(15)
     print(recommendation.listOfSongs)
